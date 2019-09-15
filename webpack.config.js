@@ -32,7 +32,7 @@ module.exports = (env) => {
         output: {
             path: path.join(__dirname, './dist'),
             filename: 'index.js',
-            library: 'ReactAsyncComponent',
+            library: 'ReactAsyncResource',
             libraryTarget: "umd"
         },
         devServer: {

@@ -1,0 +1,46 @@
+{
+  "name": "react-async-script",
+  "version": "0.6.0",
+  "description": "A library to control async libraries ;)",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean & webpack -p --env.prod",
+    "start": "webpack-dev-server -d --env.dev",
+    "postbuild": "tsc --emitDeclarationOnly --declaration",
+    "deploy": "npm run build & npm run build:dev & npm run postbuild & npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soorena110/react-async-script.git"
+  },
+  "keywords": [
+    "async javascript",
+    "async js",
+    "react script",
+    "react async",
+    "async script"
+  ],
+  "author": "MohammadReza Azarang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soorena110/react-async-script/issues"
+  },
+  "homepage": "https://github.com/soorena110/react-async-script#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/redux": "^3.6.31",
+    "awesome-typescript-loader": "^5.2.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "redux": "^4.0.4",
+    "rimraf": "^2.7.1",
+    "typescript": "^3.6.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}

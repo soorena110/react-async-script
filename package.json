@@ -1,5 +1,5 @@
 {
-  "name": "react-async-script",
+  "name": "react-async-component",
   "version": "0.6.0",
   "description": "A library to control async libraries ;)",
   "main": "./dist/index.js",
@@ -13,9 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soorena110/react-async-script.git"
+    "url": "git+https://github.com/soorena110/react-async-component.git"
   },
   "keywords": [
+    "react async js",
+    "react async component",
+    "react async script",
     "async javascript",
     "async js",
     "react script",
@@ -25,9 +28,9 @@
   "author": "MohammadReza Azarang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/soorena110/react-async-script/issues"
+    "url": "https://github.com/soorena110/react-async-component/issues"
   },
-  "homepage": "https://github.com/soorena110/react-async-script#readme",
+  "homepage": "https://github.com/soorena110/react-async-component#readme",
   "devDependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",

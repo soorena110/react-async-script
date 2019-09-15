@@ -19,8 +19,12 @@ export default InjectScripts(...requiredScripts)(MyReactComponent);
 
 Or you can also use react component like :
 
-```html
-<ScriptInjection scriptUrl={"https://code.jquery.com/jquery-3.3.1.slim.min.js"}>
+```jsx harmony
+const url = "https://code.jquery.com/jquery-3.3.1.slim.min.js";
+// you can also use array of urls, ex. url = ["url1", "url2", ...];
+<ScriptInjection scriptUrl={url}
+                 dontShowLoading={false} // optional param -> if you dont want to see loading set it to true
+                 onLoad={onLoadEvent}> // optional param -> if you want some code run if all scripts are loaded
     <MyReactComponent/>
 </ScriptInjection>
 ```

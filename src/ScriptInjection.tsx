@@ -6,7 +6,7 @@ const injectedScripts = [] as string[];
 interface Props {
     scriptUrl: string | string[];
     onLoad?: () => void;
-    dontShowLoading?: false;
+    dontShowLoading?: boolean;
 }
 
 interface State {

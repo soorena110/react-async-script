@@ -68,7 +68,8 @@ export default class ScriptInjection extends React.Component<Props, State> {
             if (this.props.dontShowLoading)
                 return null;
             const LoadingComponent = (window as any).reactLoading;
-            return <LoadingComponent/>
+            if (LoadingComponent)
+                return <LoadingComponent/>
         }
         return this.props.children;
     }
